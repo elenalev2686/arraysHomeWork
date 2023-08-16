@@ -22,8 +22,9 @@ public class StatsService {
     public long getMaxSales(long[] sales) {
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] >= sales[maxMonth])
+            if (sales[i] >= sales[maxMonth]) {
                 maxMonth = i;
+            }
         }
         return maxMonth++;
     }
@@ -31,8 +32,9 @@ public class StatsService {
     public long getMinSales(long[] sales) {
         int minMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] <= sales[minMonth])
+            if (sales[i] <= sales[minMonth]) {
                 minMonth = i;
+            }
         }
         return minMonth++;
     }
